@@ -3,6 +3,22 @@ import express from 'express';
 import cors from 'cors';
 import session from 'express-session';
 import testRoutes from './routes/test.js';
+import { buildVectorStore } from './rag/vectorStore.js';
+
+// ... after app setup, before app.listen ...
+
+// Build vector store once at startup
+buildVectorStore()
+    .then(() => {
+      console.log('✅ RAG system ready');
+      app.listen(PORT, () => {
+        console.log(`🚀 Backend running at http://localhost:${PORT}`);
+      });
+    })
+    .catch(err => {
+      console.error('❌ Failed to build vector store:', err);
+      process.exit(1);
+    });
 
 // Load environment variables from .env file
 

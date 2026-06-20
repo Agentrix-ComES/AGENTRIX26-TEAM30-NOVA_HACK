@@ -1,0 +1,34 @@
+[
+  {
+    "id": "nic_national_default",
+    "service": "NIC",
+    "scope": "national",
+    "district": null,
+    "pdf_filename": "nic_application_form.pdf",
+    "data": {
+      "documents": [
+        "Existing old NIC (if renewing/replacing)",
+        "Birth Certificate",
+        "Grama Niladhari certificate"
+      ],
+      "fees": "LKR 500 (Normal), LKR 1500 (Urgent)",
+      "office": "Department for Registration of Persons, 'Suhurupaya', Battaramulla",
+      "processing_time": "1 to 3 months (Normal), 1 week (Urgent)"
+    },
+    "text_for_embedding": "Default national requirements for a new National Identity Card (NIC). Applicants must visit the Department for Registration of Persons in Battaramulla. Required documents include existing old NIC, Birth Certificate, and Grama Niladhari certificate. Fees are LKR 500 for normal processing (1-3 months) and LKR 1500 for urgent processing (1 week). Official PDF form available: nic_application_form.pdf."
+  },
+  {
+    "id": "nic_colombo_override",
+    "service": "NIC",
+    "scope": "district_override",
+    "district": "Colombo",
+    "pdf_filename": "nic_application_form.pdf",
+    "data": {
+      "documents": null,
+      "fees": null,
+      "office": "Colombo District Secretariat, Hulftsdorp (for residents of Colombo district only)",
+      "processing_time": null
+    },
+    "text_for_embedding": "Specific NIC application instructions for Colombo District residents. Instead of the national office in Battaramulla, Colombo residents can submit their applications at the Colombo District Secretariat in Hulftsdorp. All other requirements, fees, and processing times remain the same as the national default."
+  }
+]
