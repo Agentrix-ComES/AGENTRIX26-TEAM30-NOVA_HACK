@@ -1,10 +1,14 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-// Initialize the client with your API key
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const apiKey = process.env.GEMINI_API_KEY;
+console.log("[gemini] key loaded?", !!apiKey, "prefix:", apiKey?.slice(0, 6), "length:", apiKey?.length);
 
-// Use the 'flash' model for speed and free-tier limits
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const genAI = new GoogleGenerativeAI(apiKey);
+
+
+// Use a current flash model by default, but allow override from the environment.
+const modelName = process.env.GEMINI_MODEL || "gemini-2.5-flash";
+const model = genAI.getGenerativeModel({ model: modelName });
 
 /**
  * Sends a prompt to Gemini and returns the text response.
@@ -17,8 +21,8 @@ export async function generateContent(prompt) {
     const response = result.response;
     return response.text();
   } catch (error) {
-    console.error("Gemini API Error:", error);
-    // Throw a clean error so our Express error handler can catch it
-    throw new Error("Failed to get response from AI"); 
+    console.error("Gemini API Error (full):", error);
+    console.error("Gemini API Error (message):", error?.message);
+    throw new Error(error?.message || "Failed to get response from AI");
   }
 }
