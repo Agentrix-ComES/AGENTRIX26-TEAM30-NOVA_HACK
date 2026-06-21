@@ -1,0 +1,407 @@
+[
+  {
+    "id": "nic_national_default",
+    "service": "NIC",
+    "scope": "national",
+    "district": null,
+    "pdf_filename": "application for NIC.pdf",
+    "data": {
+      "documents": [
+        "Old NIC ",
+       "Birth certificate (if required)" ,
+       "New NIC photo receipt ",
+      "Application form ",
+      "Address proof if details changed "
+
+      ],
+      "fees": "LKR 200 (Normal),LKR 2,000 extra (One-day service)",
+      "office": "Department for Registration of Persons, 'Suhurupaya', Battaramulla",
+      "processing_time": "1 to 3 months (Normal), 1 week (Urgent)"
+    },
+    "text_for_embedding": "Default national requirements for a new National Identity Card (NIC). Applicants must visit the Department for Registration of Persons in Battaramulla. Required documents include existing old NIC, Birth Certificate, and Grama Niladhari certificate. Fees are LKR 500 for normal processing (1-3 months) and LKR 1500 for urgent processing (1 week). Official PDF form available: nic_application_form.pdf."
+  },
+  {
+    "id": "nic_colombo_override",
+    "service": "NIC",
+    "scope": "district_override",
+    "district": "Colombo",
+    "pdf_filename": "application for NIC.pdf",
+    "data": {
+      "documents": null,
+      "fees": null,
+      "office": "Colombo District Secretariat, Hulftsdorp (for residents of Colombo district only)",
+      "processing_time": null
+    },
+    "text_for_embedding": "Specific NIC application instructions for Colombo District residents. Instead of the national office in Battaramulla, Colombo residents can submit their applications at the Colombo District Secretariat in Hulftsdorp. All other requirements, fees, and processing times remain the same as the national default."
+  },
+
+  {
+    "id": "nic_renewal",
+    "service": "NIC",
+    "scope": "national",
+    "district": null,
+    "pdf_filename": "application for NIC.pdf",
+    "data": {
+      "documents": [
+        "Old NIC",
+        "Birth certificate (if required)",
+        "New NIC photo receipt",
+        "Application form",
+        "Address proof if details changed"
+      ],
+      "fees": "Rs. 200 (Renewal (old NIC expired / new NIC instead of expired card),Rs.500 Change details / amended NIC,LKR 2,000 extra (One-day service)",
+      "office": "Grama Niladhari office, Divisional Secretariat, or NIC office",
+      "processing_time": "Normal service or One-day service (where available)"
+    },
+    "text_for_embedding": "Requirements for renewing an NIC or getting a new card when an old NIC exists through the Department for Registration of Persons. Applicants must get documents certified at their Grama Niladhari (GN) office and submit through the Divisional Secretariat or NIC office. Required documents include the Old NIC, Birth Certificate (if required), New NIC photo receipt, Application form, and Address proof if details changed. The standard renewal fee is Rs. 200, and one-day service is available for an extra Rs. 2,000."
+  },
+  
+
+  {
+    "id": "nic_lost_replacement",
+    "service": "NIC",
+    "scope": "national",
+    "district": null,
+    "pdf_filename": "application for NIC.pdf",
+    "data": {
+      "documents": [
+        "Police complaint copy",
+        "Birth certificate (original/certified copy)",
+        "NIC photo (from an approved photo studio — get the photo receipt)",
+        "Application form completed and certified by GN",
+        "Any other documents if details changed (name/address etc.)"
+      ],
+      "fees": "LKR 1,000 (Lost NIC replacement), LKR 2,000 extra (One-day service)",
+      "office": "Grama Niladhari office / Divisional Secretariat",
+      "processing_time": "Normal service or One-day service (where available)"
+    },
+    "text_for_embedding": "Procedures for replacing a lost Sri Lankan NIC. First, make a police complaint at the nearest station and obtain a copy of the report[cite: 1]. Obtain a replacement NIC application form from your Grama Niladhari (GN) office or a relevant NIC service office[cite: 1]. Prepare necessary documents, including the police complaint copy, birth certificate, approved studio photo receipt, and the application form certified by the GN[cite: 1]. Submit the application through your GN office or Divisional Secretariat[cite: 1]. The fee for a replacement is LKR 1,000, with an additional LKR 2,000 for one-day service if available[cite: 1]."
+  },
+  {
+    "id": "vehicle_registration_default",
+    "service": "Vehicle Registration",
+    "scope": "district",
+    "district": null,
+    "pdf_filename": "mta2_1.pdf",
+    "data": {
+      "documents": [
+        "Owner’s NIC copy (certified)",
+        "Vehicle purchase invoice (from dealer)",
+        "Insurance certificate",
+        "Vehicle photos (if required)",
+        "Customs documents (for imported vehicles)",
+        "Customs assessment notice (for imports)",
+        "Vehicle inspection/chassis & engine number verification documents"
+      ],
+      "fees": "Varies by vehicle type (e.g., LKR 25,000 for Motor car 1600cc or below,Rs.40,000 for Motor car above 1600cc,Rs.20,000 for Dual Purpose Vehicle 1000cc or below,Rs.25,000 for Dual Purpose Vehicle above 1000cc)",
+      "office": "Department of Motor Traffic or relevant registration office",
+      "processing_time": "Dependent on vehicle inspection and documentation processing"
+    },
+    "text_for_embedding": "Procedures for first registration of a vehicle through the Department of Motor Traffic (DMT)[cite: 2]. Applicants must obtain the MTA 2 form from the DMT or download it from their website[cite: 2]. Required documentation includes a certified copy of the owner's NIC, purchase invoice, insurance certificate, and relevant customs documents for imports[cite: 2]. A vehicle physical inspection of engine and chassis numbers is mandatory before paying registration fees[cite: 2]. Standard entry level registration charges for a motor car below 1600cc comprise a registration fee of LKR 25,000, plate fee of LKR 3,300, inspection fee of LKR 1,000, and documentation fee of LKR 150[cite: 2]."
+  },
+
+  {
+    "id": "vehicle_registration_colombo_override",
+    "service": "Vehicle Registration",
+    "scope": "district_override",
+    "district": "Colombo",
+    "pdf_filename": "mta2_1.pdf",
+    "data": {
+      "documents": null,
+      "fees": null,
+      "office": "Colombo District Secretariat / Regional DMT Office (for residents of Colombo district only)",
+      "processing_time": null
+    },
+    "text_for_embedding": "Specific vehicle registration instructions for Colombo District residents. Colombo residents can submit their completed MTA 2 forms and supporting registration documents at their local district registration office or regional Department of Motor Traffic branch[cite: 2]. All other vehicle registration requirements, inspection procedures, and fee structures remain the same as the national default[cite: 2]."
+  },
+  {
+    "id": "passport_application_default",
+    "service": "Passport",
+    "scope": "national",
+    "district": null,
+    "pdf_filename": "passport_application.pdf",
+    "data": {
+      "documents": [
+        "NIC",
+        "Birth Certificate",
+        "Passport Application Form"
+      ],
+      "fees": "LKR 10,000 (Normal Processing), LKR 1,500 (Urgent / One-Day Service), LKR 3,000 (Child Under 16, Normal)",
+      "office": "Department of Immigration and Emigration Sri Lanka",
+      "processing_time": "1-14 Days"
+    },
+    "text_for_embedding": "How to apply for a new Sri Lankan passport. Travel document application for first-time applicants and children. Required documents: NIC, Birth Certificate, completed Passport Application Form. Submit at the Department of Immigration and Emigration Sri Lanka. Fees: LKR 10,000 normal, LKR 1,500 urgent / one-day, LKR 3,000 child under 16. Processing time 1 to 14 days. Keywords: passport, new passport, travel document, ගමන් බලපත්‍රය, கடவுச்சீட்டு."
+  },
+  {
+    "id": "passport_colombo_override",
+    "service": "Passport",
+    "scope": "district_override",
+    "district": "Colombo",
+    "pdf_filename": "passport_application.pdf",
+    "data": {
+      "documents": null,
+      "fees": null,
+      "office": "Department of Immigration and Emigration head office, 'Suhurupaya', Battaramulla (Colombo district residents)",
+      "processing_time": null
+    },
+    "text_for_embedding": "Passport application location for Colombo district residents. Colombo residents apply at the Department of Immigration and Emigration head office in 'Suhurupaya', Battaramulla. All other requirements, fees, and processing times remain the same as the national default."
+  },
+  
+  {
+    "id": "passport_renewal",
+    "service": "Passport",
+    "scope": "national",
+    "district": null,
+    "pdf_filename": "amendment.pdf",
+    "data": {
+      "documents": [
+        "Current Passport",
+        "NIC",
+        "Passport Application Form"
+      ],
+      "fees": "LKR 10,000 (Normal Service), LKR 20,000 (One-Day / Urgent Service), LKR 3,000 (Child Passport Renewal)",
+      "office": "Department of Immigration and Emigration Sri Lanka",
+      "processing_time": "1–14 Days"
+    },
+    "text_for_embedding": "Procedures for a passport renewal through the Department of Immigration and Emigration Sri Lanka[cite: 3]. Applicants must submit their current passport, national identity card (NIC), and a completed passport application form[cite: 3]. The standard renewal fee is LKR 10,000 for normal service, LKR 20,000 for one-day / urgent service, and LKR 3,000 for a child passport renewal if applicable[cite: 3]. The expected processing timeline ranges from 1 to 14 days[cite: 3]."
+  },
+  {
+    "id": "passport_lost_replacement",
+    "service": "Passport",
+    "scope": "national",
+    "district": null,
+    "pdf_filename": "complaint_form _stolen_and_lost_sri lankan_passport.pdf",
+    "data": {
+      "documents": [
+        "Police Report",
+        "Affidavit",
+        "NIC"
+      ],
+      "fees": "LKR 15,000* (Normal Replacement Service), LKR 20,000–25,000* (One-Day / Urgent Replacement Service)",
+      "office": "Department of Immigration and Emigration Sri Lanka",
+      "processing_time": "1–14 Days"
+    },
+    "text_for_embedding": "Procedures for replacing a lost passport through the Department of Immigration and Emigration Sri Lanka[cite: 3]. The application requires a police report, an affidavit, and a national identity card (NIC)[cite: 3]. Processing fees are LKR 15,000* for normal replacement service and range between LKR 20,000 to LKR 25,000* for one-day / urgent replacement service[cite: 3]. The estimated completion timeline is 1 to 14 days[cite: 3]."
+  },
+  
+  {
+    "id": "birth_certificate_duplicate_national",
+    "service": "Birth Certificate",
+    "sub_service": "Duplicate Copy",
+    "scope": "national",
+    "district": null,
+    "pdf_filename": "birth_certificate_duplicate_form.pdf",
+    "data": {
+      "documents": [
+        "NIC",
+        "Birth details",
+        "Application Form"
+      ],
+      "fees": "LKR 100-500",
+      "office": "Divisional Secretariat / District Registrar Office",
+      "processing_time": "Same day to 14 days"
+    },
+    "text_for_embedding": "How to obtain a duplicate birth certificate in Sri Lanka. Lost birth certificate replacement. Required documents are NIC, birth details and application form. Processing time is same day to 14 days."
+  },
+  {
+    "id": "birth_certificate_correction_national",
+    "service": "Birth Certificate",
+    "sub_service": "Correction",
+    "scope": "national",
+    "district": null,
+    "pdf_filename": "birth_certificate_correction_form.pdf",
+    "data": {
+      "documents": [
+        "Original Birth Certificate",
+        "NIC",
+        "Supporting Evidence",
+        "Application Form"
+      ],
+      "fees": "LKR 200-1000",
+      "office": "District Registrar Office",
+      "processing_time": "1-4 weeks"
+    },
+    "text_for_embedding": "Birth certificate correction service in Sri Lanka. Used to correct name, spelling mistakes, date of birth errors or other details. Requires original certificate, NIC and supporting documents."
+  },
+  {
+    "id": "birth_certificate_late_registration_national",
+    "service": "Birth Certificate",
+    "sub_service": "Late Registration",
+    "scope": "national",
+    "district": null,
+    "pdf_filename": "late_birth_registration_form.pdf",
+    "data": {
+      "documents": [
+        "Affidavit",
+        "Hospital Records",
+        "Parents NICs",
+        "Witness Statements"
+      ],
+      "fees": "Higher than normal registration",
+      "office": "District Registrar Office",
+      "processing_time": "2-8 weeks"
+    },
+    "text_for_embedding": "Late birth registration service in Sri Lanka. Used when a birth was not registered on time. Adults and children can apply. Requires affidavit, proof of birth and verification process."
+  },
+  {
+    "id": "birth_certificate_other_city",
+    "service": "Birth Certificate",
+    "sub_service": "Apply From Another City",
+    "scope": "national",
+    "district": null,
+    "pdf_filename": null,
+    "data": {
+      "eligibility": "Birth registered in Sri Lanka",
+      "office": "Any Divisional Secretariat or District Registrar Office"
+    },
+    "text_for_embedding": "Can I get my birth certificate from another city in Sri Lanka? Yes. Applicants may apply through any Divisional Secretariat or District Registrar Office even if the birth was registered in a different district."
+  },
+  {
+    "id": "birth_certificate_overseas",
+    "service": "Birth Certificate",
+    "sub_service": "Overseas Application",
+    "scope": "international",
+    "district": null,
+    "pdf_filename": null,
+    "data": {
+      "documents": [
+        "Passport",
+        "NIC",
+        "Birth Details",
+        "Authorization Letter"
+      ],
+      "methods": [
+        "Sri Lankan Embassy",
+        "High Commission",
+        "Authorized Representative",
+        "Online Request"
+      ]
+    },
+    "text_for_embedding": "Can Sri Lankan citizens obtain a birth certificate from abroad? Yes. Applications can be made through Sri Lankan embassies, high commissions, authorized representatives or online certificate request services."
+  },
+  
+  {
+    "id": "death_registration_national",
+    "service": "Death Certificate",
+    "sub_service": "Death Registration",
+    "scope": "national",
+    "district": null,
+    "pdf_filename": "death_registration_form.pdf",
+    "data": {
+      "documents": [
+        "Medical Death Report",
+        "NIC of Deceased (if available)",
+        "Informant NIC",
+        "Hospital Records"
+      ],
+      "supporting_documents": [
+        "Police Report (if unnatural death)",
+        "Burial Permit (if required)"
+      ],
+      "fees": "Usually free or minimal administrative fee",
+      "office": "Divisional Secretariat / Local Registrar Office",
+      "processing_time": "Same day to 3 days"
+    },
+    "text_for_embedding": "Death registration process in Sri Lanka. Register a death with medical report and informant details. Keywords: register death, death record creation, death entry."
+  },
+  {
+    "id": "death_certificate_copy_national",
+    "service": "Death Certificate",
+    "sub_service": "Certified Copy",
+    "scope": "national",
+    "district": null,
+    "pdf_filename": "death_certificate_copy_form.pdf",
+    "data": {
+      "documents": [
+        "Death Registration Number",
+        "NIC of Applicant",
+        "Application Form"
+      ],
+      "supporting_documents": [
+        "Proof of Relationship (if required)"
+      ],
+      "fees": "LKR 100-500",
+      "office": "Divisional Secretariat / District Registrar Office",
+      "processing_time": "Same day to 14 days"
+    },
+    "text_for_embedding": "Obtain certified copy of death certificate in Sri Lanka. Lost death certificate replacement. Multiple copies allowed. Keywords: death certificate copy, duplicate death certificate."
+  },
+  {
+    "id": "death_certificate_correction_national",
+    "service": "Death Certificate",
+    "sub_service": "Correction",
+    "scope": "national",
+    "district": null,
+    "pdf_filename": "death_certificate_correction_form.pdf",
+    "data": {
+      "documents": [
+        "Original Death Certificate",
+        "NIC of Applicant",
+        "Supporting Evidence",
+        "Application Form"
+      ],
+      "fees": "Varies",
+      "office": "District Registrar Office",
+      "processing_time": "2 to 6 weeks"
+    },
+    "text_for_embedding": "Correction of death certificate details in Sri Lanka such as name, date or registration errors. Keywords: death record correction, amendment death certificate."
+  },
+  {
+    "id": "death_certificate_other_district",
+    "service": "Death Certificate",
+    "sub_service": "Apply From Another District",
+    "scope": "national",
+    "district": null,
+    "pdf_filename": null,
+    "data": {
+      "eligibility": "Death registered in Sri Lanka",
+      "office": "Any Divisional Secretariat or District Registrar Office"
+    },
+    "text_for_embedding": "Apply for death certificate from any district in Sri Lanka regardless of registration location. Keywords: other district, anywhere apply death certificate."
+  },
+  {
+    "id": "death_certificate_overseas",
+    "service": "Death Certificate",
+    "sub_service": "Overseas Application",
+    "scope": "international",
+    "district": null,
+    "pdf_filename": null,
+    "data": {
+      "documents": [
+        "Passport",
+        "NIC",
+        "Death Registration Details",
+        "Authorization Letter"
+      ],
+      "methods": [
+        "Sri Lankan Embassy",
+        "High Commission",
+        "Authorized Representative",
+        "Online Request"
+      ]
+    },
+    "text_for_embedding": "Apply for death certificate from abroad via embassy or representative. Keywords: overseas death certificate, embassy application."
+  },
+  {
+    "id": "death_registration_unnatural_death",
+    "service": "Death Certificate",
+    "sub_service": "Unnatural Death Registration",
+    "scope": "national",
+    "district": null,
+    "pdf_filename": null,
+    "data": {
+      "documents": [
+        "Medical Report",
+        "Police Report",
+        "Hospital Records",
+        "Informant NIC"
+      ]
+    },
+    "text_for_embedding": "Registration process for unnatural, accidental, violent or suspicious deaths in Sri Lanka. Police involvement required. Keywords: accident death, suspicious death registration."
+  }
+
+
+
+
+   
+]
