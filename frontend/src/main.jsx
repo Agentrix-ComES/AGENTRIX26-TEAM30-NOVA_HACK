@@ -1,0 +1,15 @@
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App';
+import { LanguageProvider } from './context/LanguageContext';
+import { SessionProvider } from './context/sessionContext';
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <LanguageProvider>
+      <SessionProvider>
+        <App />
+      </SessionProvider>
+    </LanguageProvider>
+  </StrictMode>
+);

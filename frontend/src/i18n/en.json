@@ -1,0 +1,14 @@
+{
+  "appTitle": "Sri Lanka Gov Services Assistant",
+  "appSubtitle": "NIC · Passport · Driving License · Birth & Death Certificates",
+  "languageLabel": "Language",
+  "districtLabel": "District",
+  "districtNone": "— Not set —",
+  "askPlaceholder": "Ask about a government service…",
+  "send": "Send",
+  "sending": "…",
+  "formAvailable": "An official downloadable form is available",
+  "errorTitle": "Something went wrong",
+  "retrievedFrom": "Retrieved",
+  "noResultsHint": "Tip: try queries about NIC, passport, driving license, birth or death certificates."
+}
